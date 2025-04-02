@@ -18,9 +18,9 @@ function App() {
   //const network = WalletAdapterNetwork.Devnet;
 
   //const endpoint = useMemo(() => clusterApiUrl(network), [network]);
-
+//https://solana-devnet.g.alchemy.com/v2/O2Xi7AAUR4uZHUk-xcRzsWQ8Bc07f-Xz
   return (
-    <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
+    <ConnectionProvider endpoint={"https://api.devnet.solana.com"}> 
       <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
           <WalletMultiButton></WalletMultiButton>
