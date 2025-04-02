@@ -9,9 +9,9 @@ export function Airdrop() {
     //const { Connection } = useConnection();
     const { connection } = useConnection(); // lowercase 'connection'
 
-    function sendAirdropToUser() {
-        alert("hi there")
-        //await Connection.requestAirdrop(wallet.publicKey, 1000000000);
+    async function sendAirdropToUser() {
+        await connection.requestAirdrop(wallet.publicKey, 1000000000);
+        alert("airdropped Sol")
     }
     
 
