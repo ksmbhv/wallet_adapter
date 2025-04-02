@@ -1,12 +1,13 @@
 import { WalletAccountError } from "@solana/wallet-adapter-base";
 import { useWallet } from "@solana/wallet-adapter-react";
-// import { Connection } from "@solana/wallet-adapter-react";
-
+// import { Connection } from "@solana/web3.js";
+import { useConnection } from "@solana/wallet-adapter-react";
 
 export function Airdrop() {
     //hooks in react
     const wallet = useWallet();
     //const { Connection } = useConnection();
+    const { connection } = useConnection(); // lowercase 'connection'
 
     function sendAirdropToUser() {
         alert("hi there")
