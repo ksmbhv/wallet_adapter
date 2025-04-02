@@ -1,4 +1,4 @@
-/* import React, { useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import {
@@ -11,7 +11,7 @@ import { clusterApiUrl } from '@solana/web3.js';
 import '@solana/wallet-adapter-react-ui/styles.css';
 // import { SendTokens } from './SendTokens';
 // import { SignMessage } from './SignMessage';
-*/
+
 import { Airdrop } from './Airdrop';
 
 function App() {
