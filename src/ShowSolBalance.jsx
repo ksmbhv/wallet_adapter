@@ -15,6 +15,6 @@ export function ShowSolBalance() {
     
     getBalance();
     return <div>
-        <p>SOL Balance:</p> <div id="balance"></div>
+        <p>SOL Balance:</p><div id="balance"></div>
     </div>
 }

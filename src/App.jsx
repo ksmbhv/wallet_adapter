@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
-// import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
+import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import {
     WalletModalProvider,
     WalletDisconnectButton,
     WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
-// import { clusterApiUrl } from '@solana/web3.js';
+import { clusterApiUrl } from '@solana/web3.js';
 
 import '@solana/wallet-adapter-react-ui/styles.css';
 import { SendTokens } from './SendTokens';
@@ -27,7 +27,7 @@ function App() {
           <WalletMultiButton></WalletMultiButton>
           <WalletDisconnectButton></WalletDisconnectButton>
       <div>
-        Hi There
+        Hi There, Enter your Address to recieve SOL from Testnet Faucet.
       </div>
       <Airdrop></Airdrop>
       <ShowSolBalance></ShowSolBalance>
