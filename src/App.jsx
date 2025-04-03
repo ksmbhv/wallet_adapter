@@ -13,6 +13,7 @@ import '@solana/wallet-adapter-react-ui/styles.css';
 // import { SignMessage } from './SignMessage';
 
 import { Airdrop } from './Airdrop';
+import { ShowSolBalance } from './ShowSolBalance';
 
 function App() {
   //const network = WalletAdapterNetwork.Devnet;
@@ -29,6 +30,7 @@ function App() {
         Hi There
       </div>
       <Airdrop></Airdrop>
+      <ShowSolBalance></ShowSolBalance>
       </WalletModalProvider>
     </WalletProvider>
     </ConnectionProvider>
