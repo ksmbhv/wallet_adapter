@@ -10,7 +10,7 @@ import {
 
 import '@solana/wallet-adapter-react-ui/styles.css';
 // import { SendTokens } from './SendTokens';
-// import { SignMessage } from './SignMessage';
+import { SignMessage } from './SignMessage';
 
 import { Airdrop } from './Airdrop';
 import { ShowSolBalance } from './ShowSolBalance';
@@ -31,6 +31,7 @@ function App() {
       </div>
       <Airdrop></Airdrop>
       <ShowSolBalance></ShowSolBalance>
+      <SignMessage></SignMessage>
       </WalletModalProvider>
     </WalletProvider>
     </ConnectionProvider>
